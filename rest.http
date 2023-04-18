@@ -1,0 +1,58 @@
+PUT http://localhost:8000/api/users/5
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "saemail3@gmail.com",
+    "password": "password"
+}
+###
+POST http://localhost:8000/api/users
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "email3@gmail.com",
+    "password": "password"
+}
+###
+DELETE http://localhost:8000/api/users/4
+###
+GET http://localhost:8000/api/users
+###
+GET http://localhost:8000/api/users/3
+
+###
+GET http://localhost:8000/api/videos
+###
+GET http://localhost:8000/api/videos/1
+###
+PUT http://localhost:8000/api/videos/1
+content-type: application/json
+
+{
+    "title": "test title",
+    "ytId": "test id",
+    "downloaded": true,
+    "subtitlesAvailable": true,
+    "downloadFile": "test file",
+    "subtitleWords": "test words",
+    "description": "test description"
+}
+###
+POST http://localhost:8000/api/videos
+content-type: application/json
+
+{
+    "title": "test title",
+    "ytId": "test id",
+    "downloaded": true,
+    "subtitlesAvailable": true,
+    "downloadFile": "test file",
+    "subtitleWords": "test words",
+    "description": "test description"
+}
+###
+DELETE http://localhost:8000/api/videos/1
